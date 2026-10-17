@@ -1,0 +1,26 @@
+create = []
+
+N = int(input("How many numbers: "))
+i = 0 
+
+while i < N:
+      elements = input("Enter the numbers: ")
+      i = i + 1
+      create.append(elements)
+first_element = create[0]
+print("I want the first element: " , first_element)
+middle_elements = len(create) // 2
+print("Middle Elements: " , middle_elements)
+last_element = create[-1]
+print("The Last ELement: " , last_element)
+
+create.append(60)
+create.insert(2,30)
+create.extend([100, 200])
+
+create.remove(30)
+create.pop(1)
+create.pop()
+
+create = create[::-1]
+print(create)
